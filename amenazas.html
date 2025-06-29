@@ -1,0 +1,123 @@
+<!-- amenazas.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amenazas Comunes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CiberSegura</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="amenazas.html">Amenazas</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Título -->
+  <header class="bg-danger text-white text-center p-5">
+    <h1>Amenazas Cibernéticas Comunes</h1>
+    <p>Conoce los ataques más frecuentes en la red</p>
+  </header>
+
+  <!-- Tarjetas de Amenazas -->
+  <section class="container my-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/phishing.jpg" class="card-img-top" alt="Phishing">
+          <div class="card-body">
+            <h5 class="card-title">Phishing</h5>
+            <p class="card-text">Engaño que simula sitios web legítimos para robar información personal.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/ransomware.jpg" class="card-img-top" alt="Ransomware">
+          <div class="card-body">
+            <h5 class="card-title">Ransomware</h5>
+            <p class="card-text">Secuestra tus archivos y pide un rescate para liberarlos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/malware.jpg" class="card-img-top" alt="Malware">
+          <div class="card-body">
+            <h5 class="card-title">Malware</h5>
+            <p class="card-text">Software malicioso que daña o accede a sistemas sin permiso.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/ddos.jpg" class="card-img-top" alt="DDoS">
+          <div class="card-body">
+            <h5 class="card-title">Ataque DDoS</h5>
+            <p class="card-text">Saturación de un servidor para dejarlo fuera de servicio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acordeón con Casos Reales -->
+  <section class="container my-5">
+    <h2 class="mb-4">Casos Reales</h2>
+    <div class="accordion" id="casosAcordeon">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#caso1">
+            Caso 1: Phishing en bancos
+          </button>
+        </h2>
+        <div id="caso1" class="accordion-collapse collapse show" data-bs-parent="#casosAcordeon">
+          <div class="accordion-body">
+            En 2022, miles de usuarios recibieron correos falsos de su banco solicitando datos personales. Muchos cayeron en la trampa.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caso2">
+            Caso 2: Ransomware en hospitales
+          </button>
+        </h2>
+        <div id="caso2" class="accordion-collapse collapse" data-bs-parent="#casosAcordeon">
+          <div class="accordion-body">
+            Hospitales en EE.UU. fueron atacados por ransomware, afectando sus operaciones y acceso a historiales médicos.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caso3">
+            Caso 3: DDoS a plataformas educativas
+          </button>
+        </h2>
+        <div id="caso3" class="accordion-collapse collapse" data-bs-parent="#casosAcordeon">
+          <div class="accordion-body">
+            Plataformas de clases online fueron víctimas de ataques DDoS que interrumpieron el servicio por horas durante la pandemia.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
